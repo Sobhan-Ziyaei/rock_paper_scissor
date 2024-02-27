@@ -24,7 +24,20 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: Center(
           child: Column(
-            children: [Image.asset('assets/images/1.png')],
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Image.asset('assets/images/1.png', height: 100),
+              TextButton(
+                onPressed: () {},
+                child: const Text(
+                  'شروع بازی',
+                  style: TextStyle(color: Colors.black, fontSize: 24),
+                ),
+              ),
+              Image.asset('assets/images/2.png', height: 100),
+            ],
           ),
         ),
       ),
